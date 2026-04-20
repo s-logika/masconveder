@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mass Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Mass Converter</h1>
+
+  <input type="number" id="inputValue" value="number">
+  
+  <select id="fromUnit">
+    <option value="g">Grams (g)</option>
+    <option value="kg">Kilograms (kg)</option>
+  </select>
+
+  <div class="separator">-- to --</div>
+
+  <select id="toUnit">
+    <option value="g">Grams (g)</option>
+    <option value="kg">Kilograms (kg)</option> 
+  </select>
+
+  <button onclick="convert()">Convert</button>
+
+  <div class="result" id="result"></div>
+</div>
+<script src="massconverter.js"></script>
+</body>
+</html>
